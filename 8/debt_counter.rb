@@ -16,8 +16,6 @@ class DebtCounter
     days_in_iteration = period / payments_number
     start_sum_for_payment = sum / payments_number
     
-    iteration_excess = []
-    
     payments_number.times do
       percents = (debt * days_in_iteration / 100).round
       total_excess += percents
